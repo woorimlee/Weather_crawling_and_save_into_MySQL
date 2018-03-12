@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿# Weather_crawling_and_save_into_MySQL
+=======
+# Weather_crawling_and_save_into_MySQL
+>>>>>>> c743b39575f0f117671144ceec623e5855bed852
 ## 사용방법
 
 0. 기본적으로 MySQL이 설치되어 있고, 모듈이 import 되어 있다고 전제한다.
