@@ -10,10 +10,9 @@
 ![2](https://user-images.githubusercontent.com/36785390/37285031-fb84fd0e-2640-11e8-954f-45322b46c260.png)
 
 3. 매일 날씨 정보를 업데이트 하기 위해 Windows(OS)의 Task Scheduler를 사용한다.
+사용 방법은 아래의 링크를 참조하자.
+http://fnmj.tistory.com/19
 
 url은 다음과 같다.
 url = "http://weather.naver.com/rgn/cityWetrMain.nhn"
 ![1](https://user-images.githubusercontent.com/36785390/37284762-2497ecd4-2640-11e8-8051-ea3224bdbe38.png)
-
-사용 방법은 아래의 링크를 참조하자.
-http://fnmj.tistory.com/19
