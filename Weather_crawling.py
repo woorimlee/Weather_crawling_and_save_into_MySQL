@@ -5,7 +5,7 @@ import MySQLdb
 import os
 
 #MySQL에 연결할 유저 비밀번호를 각자 입력하세요.
-my_passwd = 비밀번호 입
+my_passwd = "비번입력"
 url = "http://weather.naver.com/rgn/cityWetrMain.nhn"
 req = request.urlopen(url)
 soup = BeautifulSoup(req, "html.parser")
@@ -30,16 +30,21 @@ cur = conn.cursor()
 cur.execute('DROP TABLE c_w_tbl')
 cur.execute('''
 CREATE TABLE c_w_tbl (
-	city VARCHAR(5) PRIMARY KEY NOT NULL,
+	city VARCHAR(15) PRIMARY KEY NOT NULL,
 	weather VARCHAR(100) NOT NULL)
 ''')
 
 for i, j in city_weather.items():
-    cur.execute("INSERT INTO c_w_tbl VALUES(%s, %s)", (i,j))
+    cur.execute("INSERT INTO c_w_tbl(city,weather) VALUES(%s, %s)", (i,j))
+
+cur.execute("INSERT INTO c_w_tbl(city,weather) VALUES('abcde', 'test')")
+#변경 사항 커밋을 해줘야 합니다.
+conn.commit()
 
 cur.execute("SELECT * FROM c_w_tbl")
 for row in cur.fetchall():
     print(row)
+    
 
 #작업 스케줄러로 실행시 출력되는 콘솔 창이 바로 꺼지지 않게.
 os.system('pause')
