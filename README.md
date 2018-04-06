@@ -2,6 +2,10 @@
 
 ## 사용방법
 
+아래의 블로그에 자세하게 설명되어 있습니다.
+https://blog.naver.com/and_lamyland/221246455230
+
+
 0. 기본적으로 MySQL이 설치되어 있고, 모듈이 import 되어 있다고 전제한다.
 
 1. 변수 my_passwd 에는 나중에 연결 할 MYSQL의 접속하고자 하는 user의 비밀번호를 적는다.
